@@ -83,4 +83,4 @@ with links:
       if p == 2:
           y = index
           z = NewsArticles['link'].values[y]
-          st.write("[link](z)")
+          st.text(z)
