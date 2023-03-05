@@ -63,7 +63,7 @@ with links:
       if p == 0:
           y = index
           z = NewsArticles['link'].values[y]
-          st.write("[link]z")
+          st.text(z)
 
   st.text('')
 
@@ -73,7 +73,7 @@ with links:
       if p == 1:
           y = index
           z = NewsArticles['link'].values[y]
-          st.write("[link]z")
+          st.text(z)
 
   st.text('')
 
@@ -83,4 +83,4 @@ with links:
       if p == 2:
           y = index
           z = NewsArticles['link'].values[y]
-          st.write("[link]z")
+          st.text(z)
