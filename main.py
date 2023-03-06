@@ -15,7 +15,7 @@ vectorizer = TfidfVectorizer(stop_words='english')
 X = vectorizer.fit_transform(summary_list)
 true_k = 3
 
-model = KMeans(n_clusters=true_k, init='k-means++', max_iter=30, n_init=1)
+model = KMeans(n_clusters=true_k, init='k-means++', max_iter=100, n_init=1)
 model.fit(X)
 
 order_centroids = model.cluster_centers_.argsort()[:, ::-1]
@@ -63,7 +63,7 @@ with links:
       if p == 0:
           y = index
           z = NewsArticles['link'].values[y]
-          st.text(z)
+          st.write(z)
 
   st.text('')
 
@@ -73,7 +73,7 @@ with links:
       if p == 1:
           y = index
           z = NewsArticles['link'].values[y]
-          st.text(z)
+          st.write(z)
 
   st.text('')
 
@@ -83,4 +83,4 @@ with links:
       if p == 2:
           y = index
           z = NewsArticles['link'].values[y]
-          st.text(z)
+          st.write(z)
