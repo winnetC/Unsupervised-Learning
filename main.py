@@ -13,7 +13,7 @@ for x in NewsArticles['summary']:
 
 vectorizer = TfidfVectorizer(stop_words='english')
 X = vectorizer.fit_transform(summary_list)
-true_k = 3
+true_k = 4
 
 model = KMeans(n_clusters=true_k, init='k-means++', max_iter=100, n_init=1)
 model.fit(X)
@@ -81,6 +81,16 @@ with links:
 
   for index, p in enumerate(NewsArticles.cluster_label):
       if p == 2:
+          y = index
+          z = NewsArticles['link'].values[y]
+          st.write(z)
+
+  st.text('')
+
+  st.text('Cluster Group 3')
+
+  for index, p in enumerate(NewsArticles.cluster_label):
+      if p == 3:
           y = index
           z = NewsArticles['link'].values[y]
           st.write(z)
