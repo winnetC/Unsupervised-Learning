@@ -42,7 +42,11 @@ links = st.container()
 
 with header:
   st.header('Q2')
-  # st.text('Question...')
+  st.text('1.Francina Mudzingwa R189405W')
+  st.text('2.Nicole Mphambela R195865A')
+  st.text('3.Abgirl Chigume R195878B')
+  st.text('4.Winnet Chibisa R195779D')  
+# st.text('Question...')
 
 # with info:
 #   st.header('the question')
@@ -94,3 +98,4 @@ with links:
           y = index
           z = NewsArticles['link'].values[y]
           st.write(z)
+  
