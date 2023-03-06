@@ -46,10 +46,10 @@ with header:
   st.text('2.Nicole Mphambela R195865A')
   st.text('3.Abgirl Chigume R195878B')
   st.text('4.Winnet Chibisa R195779D')  
-# st.text('Question...')
+  st.text('')
 
 # with info:
-#   st.header('the question')
+  st.header('')
 
 with dataset:
   # st.header('dataframe of info extracted from scrawling and scraping the web')
